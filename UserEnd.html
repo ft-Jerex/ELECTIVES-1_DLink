@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="icon" type="image/x-icon" href="../Images/1.png">
+    <link rel="stylesheet" href="CSS/Landingpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/all.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+</head>
+<body style="background-color:#617ebd">
+    <div class="user-container">
+        <div class="Picture">
+        </div>
+
+        <div class="Bio">
+            <h1 class="username">Jerard J. Regalado</h1>
+            <p class="bio">I am a BSCS student under CCS in WMSU</p>
+        </div>
+             
+        <div class="SocialLinks">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+        <div class="SelectLink">
+            <select
+              name="category"
+              class="selectLink"
+              id="selectLink"
+            >
+              <option value="all">All</option>
+              <option value="AI">A.I sites</option>
+              <option value="Playlist">Playlist</option>
+              <option value="Guides">Guides</option>
+            </select>
+          </div>
+        </div>
+        <hr class="user-end">
+
+    <main class="user-end-main">
+        <section class="Category1Elements">
+        <div class="container AI" id="A1"><p>Chat GPT</p>
+            <div >
+            <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+            <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+
+        <div class="container AI" id="A2"><p>Phind</p>
+            <div >
+                <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+
+        <div class="container AI" id="A3"><p>Gemini</p>
+            <div >
+                <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+        </section>
+
+        <section class="Category2Elements">
+            <div class="container Playlist" id="B1"><p>HTML course</p>
+                <div >
+                    <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+    
+            <div class="container Playlist" id="B2"><p>CSS course</p>
+                <div >
+                    <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+    
+            <div class="container Playlist" id="B3"><p>Javascript course</p>
+                <div >
+                    <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                    <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+    
+            </section>
+
+            <section class="Category3Elements">
+                <div class="container Guides"><p id="C1">StackOverflow</p>
+                    <div >
+                        <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+        
+                <div class="container Guides"><p>Bootstrap</p>
+                    <div >
+                        <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+        
+                <div class="container Guides"><p>Github</p>
+                    <div >
+                        <button class="heart-react"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="copy-react"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <a href="Login.html">Join us now</a>
+        </div>
+
+        <div class="footer-logo">
+            <p>Dlink</p>
+            <div class="cweb-logo"></div>
+        </div>
+        </footer>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".selectLink").value = "all";
+            document.querySelector(".selectLink").dispatchEvent(new Event("change"));
+          });
+        
+        document.querySelector(".selectLink").addEventListener("change", function () {
+            var value = this.value;
+        
+            document.querySelectorAll(".container").forEach(function (linkPlaceholder) {
+              if (value === "all" || linkPlaceholder.classList.contains(value)) {
+                linkPlaceholder.classList.add("visible");
+              } else {
+                linkPlaceholder.classList.remove("visible");
+              }
+            });
+          });
+
+        
+
+          
+</script>
+
+<script>
+
+//Heart React
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all elements with class 'heart-react'
+    var buttons = document.querySelectorAll('.heart-react');
+
+    // Loop through each button and add event listener
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            toggleColor(this); // 'this' refers to the button being clicked
+        });
+    });
+
+    function toggleColor(button) {
+        if (button.classList.contains("clicked")) {
+            button.classList.remove("clicked");
+        } else {
+            button.classList.add("clicked");
+        }
+    }
+});
+
+//Copy React 
+// Get all elements with class 'copyButton'
+document.addEventListener("DOMContentLoaded", function() {
+var copyButtons = document.querySelectorAll('.copy-react');
+
+// Loop through each button and add event listener
+copyButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var textToCopy = "https://example.com"; // Replace with your link
+        copyTextToClipboard(textToCopy);
+    });
+});
+
+// Function to copy text to clipboard
+function copyTextToClipboard(text) {
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('Link copied to clipboard: ' + text);
+}
+
+});
+
+
+
+</script>
+
+
+
+<script
+ src="https://kit.fontawesome.com/592062e192.js"
+ crossorigin="anonymous"
+></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

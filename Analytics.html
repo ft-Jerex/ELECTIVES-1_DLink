@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/Landingpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome.min.css">
+  
+    <title>Analytics</title>
+    <link rel="icon" type="image/x-icon" href="../Images/1.png">
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><div class="cweb-logo"></div></li>
+        <li>
+          <a class="nav-menu " href="index.html"
+          ><span><i class="fa-solid fa-link"></i></span>Links
+          </a>
+        </li>
+        <li>
+          <a class="nav-menu " href="Profile.html"
+            ><span><i class="fa-solid fa-user"></i></span>Profile</a
+          >
+        </li>
+        <li>
+          <a class="nav-menu main" href="Analytics.html"
+            ><span><i class="fa-solid fa-chart-simple"></i></span>Analytics
+          </a>
+        </li>
+        <li>
+          
+         <div class="UserIcon"> <button id="userIcon" class="userIcon"></button></div>
+          <div class="dropdown-menu" id="dropdown-menu">
+              <p class="dm-username">Jerard J. Regalado</p>
+              <p class="dm-link">dlink.eo/Jerex</p>
+              <hr>
+              <button id="copy-link">Copy Link</button>
+              <a href="Sign_up.html"><i class="fa-solid fa-user-plus"></i> Create an Account</a>
+              <a href="UserEnd.html"><i class="fa-solid fa-display"></i> Display Account</a>
+              <p class="dm-Menu">Menu</p>
+              <div class="menu-dm">
+              <a href="index.html"><i class="fa-solid fa-link"></i> Links</a>
+              <a href="Profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+              <a href="Analytics.html"><i class="fa-solid fa-chart-simple"></i>Analytics</a>
+              <a href="Login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out?</a>
+              </div>
+            </div>
+
+
+          
+        </li>
+      </ul>
+    </nav>
+
+    <main class="FullAnalytics">
+
+    <section class="fullAnalytics-section">
+      <h1>FULL ANALYTICS</h1>
+      <div class="analyticsInfo">
+      <div class="Views AInfo"><i class="fa-solid fa-eye"></i> Total Views: 25</div>
+      <div class="Click AInfo"><i class="fa-solid fa-arrow-pointer"></i> Total Clicks: 40</div>
+      <div class="Favorites AInfo"><i class="fa-solid fa-heart"></i> Total Favorites: 40</div>
+      </div>
+    </section>
+
+    <section class="interactions section">Interactions
+      <div class="bar-graph"></div>
+      <ul>
+        <li><i class="fa-solid fa-eye"></i> Views</li>
+        <li><i class="fa-solid fa-arrow-pointer"></i> Clicks</li>
+        <li><i class="fa-solid fa-heart"></i> Favorites</li>
+      </ul>
+    </section>
+
+    <section class="linkPerformance section"><div>Best Link Performance
+      <p><i class="fa-solid fa-arrow-pointer"></i> Clicks</p></div>
+      <div><p>Chat GPT</p> <p class="bold-this">39</p></div>
+      <hr>
+      <div><p>Bootstrap</p> <p class="bold-this">30</p></div>
+      <hr>
+      <div><p>HTML course</p> <p class="bold-this">28</p></div>
+      <hr>
+      <div><p>StackOverflow</p> <p class="bold-this">20</p></div>
+      <hr>
+      <div><p>Phind</p> <p class="bold-this">10</p></div>
+      <hr>
+    </section>
+
+    <section class="platform section">Best Platform
+      <div class="piechart-container">
+        <div class="listOfItem">
+        <ul>
+          <li class="li-of-platform"><i class="fa-solid fa-square" style="color: purple;"></i> Tablet : 10</li>
+          <li class="li-of-platform"><i class="fa-solid fa-square" style="color: blue;"></i> Mobile : 10</li>
+          <li class="li-of-platform"><i class="fa-solid fa-square" style="color: red;"></i> Desktop : 10</li>
+          <li class="li-of-platform"><i class="fa-solid fa-square" style="color: green;"></i> Others : 10</li>
+         </ul>
+        </div>
+        <div class="piechart"></div>
+      </div>
+        <hr>
+      <div class="ViewClick Container">
+        <button><i class="fa-solid fa-eye"></i><u><b> Views</b></u></button> 
+        <p>|</p>
+        <button><i class="fa-solid fa-arrow-pointer"></i> Clicks</button>
+        </div>
+      </section>
+    </section>
+
+    <section class="socialIcon section">Social Icon Performance
+      <p>Facebook - <b>20</b></p>
+      <div class="stats Facebook"></div>
+      <p>Instagram - <b>16</b></p>
+      <div class="stats Instagram"></div>      
+      <p>Tiktok - <b>10</b></p>
+      <div class="stats Tiktok"></div>  
+      <p>X - <b>5</b></p>
+      <div class="stats X"></div>  
+      <p>Youtube - <b>3</b></p>
+      <div class="stats Youtube"></div>
+      <hr>
+
+      <div class="ViewClick Container">
+      <button><i class="fa-solid fa-eye"></i><u><b> Views</b></u></button> 
+      <p>|</p>
+      <button><i class="fa-solid fa-arrow-pointer"></i> Clicks</button>
+      </div>
+    </section>
+
+    </main>
+    
+<script>
+    //DROPDOWN MENU
+  document.getElementById("userIcon").addEventListener("click", function() {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.style.display === "none") {
+      dropdownMenu.style.display = "block";
+    } else {
+      dropdownMenu.style.display = "none";
+    }
+  });
+  </script>
+    <script src="script.js"></script>
+    </body>
+</html>

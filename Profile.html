@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/Landingpage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/all.min.css" />
+    <link rel="stylesheet" href="fonts/fontawesome.min.css" />
+
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="../Images/1.png" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><div class="cweb-logo"></div></li>
+        <li>
+          <a class="nav-menu" href="index.html"
+            ><span><i class="fa-solid fa-link"></i></span>Links
+          </a>
+        </li>
+        <li>
+          <a class="nav-menu main" href="Profile.html"
+            ><span><i class="fa-solid fa-user"></i></span>Profile</a
+          >
+        </li>
+        <li>
+          <a class="nav-menu" href="Analytics.html"
+            ><span><i class="fa-solid fa-chart-simple"></i></span>Analytics
+          </a>
+        </li>
+        <li>
+          <div class="UserIcon">
+            <button id="userIcon" class="userIcon"></button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu">
+            <p class="dm-username">Jerard J. Regalado</p>
+            <p class="dm-link">dlink.eo/Jerex</p>
+            <hr />
+            <button id="copy-link">Copy Link</button>
+            <a href="Sign_up.html"
+              ><i class="fa-solid fa-user-plus"></i> Create an Account</a
+            >
+            <a href="UserEnd.html"
+              ><i class="fa-solid fa-display"></i> Display Account</a
+            >
+            <p class="dm-Menu">Menu</p>
+            <div class="menu-dm">
+              <a href="index.html"><i class="fa-solid fa-link"></i> Links</a>
+              <a href="Profile.html"
+                ><i class="fa-solid fa-user"></i> Profile</a
+              >
+              <a href="Analytics.html"
+                ><i class="fa-solid fa-chart-simple"></i>Analytics</a
+              >
+              <a href="Login.html"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i> Log
+                out?</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="profileSection" id="profileSection">
+      <div class="profile-options">
+        <p class="profile">Profile</p>
+        <div class="profilePic"></div>
+        <div class="profile-container">
+          <button class="Add_Image">Add Image</button>
+          <button class="Remove_Image">Remove Image</button>
+        </div>
+
+        <div class="information">
+          <form class="f2">
+            <label>Username</label>
+            <input class="IName" type="text" placeholder="Enter Name" />
+            <label>Enter Bio</label>
+            <input class="IBio" type="text" placeholder="Bio" />
+          </form>
+
+          <p>Social Icon</p>
+          <div class="dropdown">
+            <button class="Social_Icon" onclick="toggleDropdown()">
+              Add Social Icon
+            </button>
+            <div class="dropdown-content" id="checkboxForm">
+              <p style="padding: 10px">Choose your Icons</p>
+              <div class="scroll">
+                <input type="checkbox" name="checkbox1" value="1" checked /><i
+                  class="fa-brands fa-facebook"
+                ></i>
+                Facebook<br />
+                <hr />
+                <input type="checkbox" name="checkbox2" value="2" checked /><i
+                  class="fa-brands fa-x-twitter"
+                ></i>
+                X/Twitter<br />
+                <hr />
+                <input type="checkbox" name="checkbox3" value="3" checked /><i
+                  class="fa-brands fa-instagram"
+                ></i>
+                Instagram<br />
+                <hr />
+                <input type="checkbox" name="checkbox4" value="4" checked /><i
+                  class="fa-brands fa-tiktok"
+                ></i>
+                Tiktok<br />
+                <hr />
+                <input type="checkbox" name="checkbox5" value="5" checked /><i
+                  class="fa-brands fa-youtube"
+                ></i>
+                Youtube<br />
+                <hr />
+                <input
+                  type="checkbox"
+                  name="checkbox6"
+                  value="6"
+                  onchange="limitCheckboxes()"
+                /><i class="fa-brands fa-linkedin"></i> LinkedIn<br />
+                <hr />
+                <input
+                  type="checkbox"
+                  name="checkbox7"
+                  value="7"
+                  onchange="limitCheckboxes()"
+                /><i class="fa-brands fa-github"></i> Github<br />
+                <hr />
+                <input
+                  type="checkbox"
+                  name="checkbox8"
+                  value="8"
+                  onchange="limitCheckboxes()"
+                /><i class="fa-brands fa-reddit"></i> Reddit<br />
+                <hr />
+                <input
+                  type="checkbox"
+                  name="checkbox9"
+                  value="9"
+                  onchange="limitCheckboxes()"
+                /><i class="fa-brands fa-discord"></i> Discord<br />
+                <hr />
+                <input
+                  type="checkbox"
+                  name="checkbox10"
+                  value="10"
+                  onchange="limitCheckboxes()"
+                /><i class="fa-brands fa-pinterest"></i> Pinterest<br />
+              </div>
+              <hr />
+              <button onclick="saveSelection(event)">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="themeSection">
+      <div class="theme-options">
+        <p class="Themes">Themes</p>
+
+        <div><p>Style</p></div>
+        <div class="style-container">
+          <theme
+            ><p>Default</p>
+            <div class="Style s1"></div
+          ></theme>
+          <theme
+            ><p>Coquette</p>
+            <div class="Style s2"></div
+          ></theme>
+          <theme
+            ><p>Gothic</p>
+            <div class="Style s3"></div
+          ></theme>
+          <theme
+            ><p>Gradient</p>
+            <div class="Style s4"></div
+          ></theme>
+          <theme
+            ><p>Y2K</p>
+            <div class="Style s5"></div
+          ></theme>
+          <theme
+            ><p>Aesthethic</p>
+            <div class="Style s6"></div
+          ></theme>
+        </div>
+
+        <hr />
+
+        <div><p>Color</p></div>
+        <div class="color-container">
+          <label for=""></label>
+          <div><input type="color" name="Base" id="baseColor" />: Base</div>
+          <div>
+            <input type="color" name="Accent" id="accentColor" />: Accent
+          </div>
+          <div>
+            <input type="color" name="Buttons" id="buttonColor" />: Button
+          </div>
+        </div>
+
+        <hr />
+
+        <div><p>Button</p></div>
+        <div class="button-container">
+          <div class="Button Solid">
+            <p>Solid</p>
+            <div class="Solid1 n1">Your Link Here</div>
+            <div class="Solid2 n2">Category</div>
+          </div>
+
+          <div class="Button Transparent">
+            <p>Transparent</p>
+            <div class="Transparent1 n1">Your Link Here</div>
+            <div class="Transparent2 n2">Category</div>
+          </div>
+
+          <div class="Button Shadow">
+            <p>Shadow</p>
+            <div class="Shadow1 n1">Your Link Here</div>
+            <div class="Shadow2 n2">Category</div>
+          </div>
+
+          <div class="Button Dashed">
+            <p>Dashed</p>
+            <div class="Dashed1 n1">Your Link Here</div>
+            <div class="Dashed2 n2">Category</div>
+          </div>
+
+          <div class="Button Border">
+            <p>Border</p>
+            <div class="Border1 n1">Your Link Here</div>
+            <div class="Border2 n2">Category</div>
+          </div>
+
+          <div class="Button Squared">
+            <p>Squared</p>
+            <div class="Squared1 n1">Your Link Here</div>
+            <div class="Squared2 n2">Category</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="Save_btnContainer2">
+      <button type="submit" class="Save_btn" onclick="ScrollToProfileSection()">
+        <i class="fa-regular fa-floppy-disk"></i>
+        <p>Save</p>
+      </button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select the color input element
+        var colorInput1 = document.getElementById("baseColor");
+        var colorInput2 = document.getElementById("accentColor");
+        var colorInput3 = document.getElementById("buttonColor");
+
+        // Set the initial color to red (#ff0000)
+        colorInput1.value = "#617ebd";
+        colorInput2.value = "#5a5959";
+        colorInput3.value = "#fcfbfb";
+      });
+
+      function toggleDropdown() {
+        var dropdownContent = document.getElementById("checkboxForm");
+        dropdownContent.style.display =
+          dropdownContent.style.display === "block" ? "none" : "block";
+      }
+
+      function saveSelection(event) {
+        event.stopPropagation(); // Prevents the dropdown from closing when clicking the Save button
+        var dropdownContent = document.getElementById("checkboxForm");
+        dropdownContent.style.display = "none";
+      }
+
+      function limitCheckboxes() {
+        var checkedCheckboxes = document.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        );
+        if (checkedCheckboxes.length > 5) {
+          alert("You can only select up to 5 checkboxes.");
+          // Uncheck the last checked checkbox
+          var lastCheckedCheckbox =
+            checkedCheckboxes[checkedCheckboxes.length - 1];
+          lastCheckedCheckbox.checked = false;
+        }
+      }
+
+      //DROPDOWN MENU
+      document
+        .getElementById("userIcon")
+        .addEventListener("click", function () {
+          var dropdownMenu = document.getElementById("dropdown-menu");
+          if (dropdownMenu.style.display === "none") {
+            dropdownMenu.style.display = "block";
+          } else {
+            dropdownMenu.style.display = "none";
+          }
+        });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

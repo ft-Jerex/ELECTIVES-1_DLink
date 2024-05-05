@@ -1,0 +1,1789 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    background-color:rgb(240, 241, 243);
+    font-family:"DM Sans", sans-serif ;
+}
+button, select{
+    font-family: "DM Sans", sans-serif ;
+}
+/*NAV BAR LINKS*/
+nav{
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.cweb-logo{
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../Images/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cweb-logo:hover{
+    background-image: url(../Images/2.png);
+}
+.cweb-logo:active{
+    background-image: url(../Images/1.png);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.main{
+    background-color: rgb(255, 217, 0); 
+    border-radius: 20px; 
+    color: #00005a; border: 1px solid ;
+}
+nav ul i{
+    margin-right: 5px;
+}
+nav li{
+    height: 70px;
+    margin: 0 20px;
+    display: flex;
+}
+nav a{
+    font-size: 16px;
+    height: 70%;
+    margin: auto;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: rgb(79, 79, 79);
+    font-weight: 600;
+}
+main{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav a:hover{
+    background-color: #00005a;
+    border-radius: 20px;
+    color: #fff;
+}
+nav a:active{
+    background-color: #FFCC00;
+    border-radius: 20px;
+    border: 2px solid #00005a;
+    color: #00005a;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+ nav .web-logo:hover{
+    background-color:transparent;
+    font-weight:600;
+    border:none;
+    color: rgb(79, 79, 79);
+}
+.userIcon{
+    width: 60px;
+    border: none;
+    height: 70px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.userIcon:hover{
+    background-color: transparent;
+}
+.UserIcon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url(../Images/profilePic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 217, 0);
+
+    margin: auto;
+}
+.userIcon:hover{
+    border: none
+}
+.UserIcon:hover{
+    border: 2px solid #00005a;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, 0.8);
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+    .dm-username{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .dm-link{
+        font: 14px;
+        font-weight: 200;
+        padding-top: 0;
+        color: gray;
+    }
+    .dropdown-menu hr{
+        margin: 10px 0;
+    }
+    .dropdown-menu button{
+        width: 100%;
+        font-size: 18px;
+        border-radius: 25px;
+        border: 1px solid gray;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    .dropdown-menu a{
+        padding: 10px 5px;
+    }
+    .dropdown-menu button:hover{
+        background-color: #e1e1e1;
+    }
+    .menu-dm{
+        gap: 50px;
+    }
+
+/*HOME*/
+
+header{
+    background-color: blue;
+    width: 100%;
+    height: 60vh;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+
+    background-image: linear-gradient(rgba(7, 58, 228), rgba(105, 129, 209)), url(../Images/loginbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.header-content{
+    max-width: 600px;
+}
+.header-content h1{
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.header-content p{
+    font-size: 30px;
+}
+.Title-head{
+    font-size: 40px;
+}
+.Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+
+}
+.Link .Text{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: bold;
+    color: rgb(0, 0, 90);
+}
+.addlink {
+    background-color: #fff;
+    width: 70%;
+    height: px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.addlink h2{
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 90);
+}
+.addlink p{
+    color: black;
+    margin: 20px 50px 10px;
+    font-size: 1.25rem;
+}
+.addlink ul{
+    width: 100%;
+    height: 100px;
+    list-style: none;
+    background-color: transparent;
+}
+.addlink li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addlink i{
+    margin: 10px;
+    height: 100%;
+    padding: 10px 10px;
+    text-decoration: none;
+    size: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 217, 0);
+    border-radius: 50%;
+
+    border: none;
+    background-color: transparent;
+}
+.fa-brands{
+    font-size: 50px;
+}
+.addlink button{
+    border: none;
+    background-color: transparent;
+}
+.addlink i:hover{
+    background-color: rgb(255, 196, 0);
+}
+
+.addIcon, .save_btn{
+    width: 150px;
+    height: 40px;
+    font-size: 1em;
+    background-color: rgb(0, 0, 193);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+.addIcon:hover{
+    background-color: rgb(1, 1, 155);
+}
+.iconButton{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+.iconModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #fff;
+    width: 500px;
+    max-width: 80%;
+}
+.iconModal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.modal-header .close-button, .close-popup{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: rgb(255, 196, 0);
+    padding: 5px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background: none;
+}
+.modal-body, .popup-body{
+    padding: 20px;
+}
+.modal-body label, .popup-body label{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.modal-body input, .popup-body input{
+    width: 80%;
+    height: 45px;
+    border-radius: 20px;
+    padding: 5px;
+}
+#overlay{
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+/*.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+*/
+.linkPages{
+    width: 70%;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.items{
+    width: 110%;
+    display: block;
+    border: 1px solid;
+}
+.linkCreation{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.addLink_btn{
+    align-items: center;
+    margin: 20px;
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 217, 0);
+    color: 000080;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid #00005a;
+    box-shadow: 0 6px #00005a;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+}
+.addLink_btn p{
+    margin-left: 5px;
+}
+.addLink_btn:hover{
+    background-color: rgb(255, 196, 0);
+}
+span .fa-plus{
+    font-size: 20px;
+    margin-left: 5px;
+}
+/*Addlink pop-up*/
+#Pop_up, #pop-upCategory{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-body{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #fff;
+    width: 500px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-container{
+    display:flex;
+    padding:10px 0 ;
+    justify-content: center;
+}
+.close_popup-container{
+    display: flex;
+    justify-content: end;
+}
+.categorySection{
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+}
+.addCategory_btn{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #00005a;
+    border-style: dashed dashed none dashed;
+    box-shadow: 0 6px #00005a;
+    font-weight: 600;
+}
+.addCategory_btn p{
+    margin-left: 5px;
+}
+.addCategory_btn:hover{
+    background-color: #fff;
+}
+.SelectCategory{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+.SelectCategory label{
+    margin-right: 10px;
+    font-weight: 600;
+}
+.selectCategory{
+    font-size: 1em;
+    border-color: #00005a;
+}
+
+.linkPlaceholder{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    display: none;
+    margin: 20px 0 20px 0;
+    border: 2px dashed;
+    padding: 20px;
+}
+.linkPlaceholder.visible{
+    display: block;
+}
+
+
+.input_tf{
+    display: flex;
+    margin: 10px;
+    width: 80%;
+    flex-direction: column;
+}
+.fa-pen-to-square{
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 45px;
+
+}
+.input_field, .input_field2{
+    justify-content: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 16px;
+
+
+    outline: none;
+}
+.tf{
+    display: flex;
+}
+
+.input_tf label{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.edit_btn, .edit_btn2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    justify-self: center;
+}
+.trash-icon{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+}
+.trash-icon button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+}
+.fa-trash-can{
+    font-size: 25px;
+}
+.trash-icon button:hover{
+    background-color: #FFCC00;
+    border-radius: 10px;
+
+}
+.Save_btnContainer, .Save_btnContainer2{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    justify-content: right;
+}
+.Save_btn{
+    display: flex;
+    padding: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:rgb(255, 217, 0);
+    box-sizing: border-box;
+    box-shadow: 0 6px #00005a;
+    border: 1px solid #00005a;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Save_btn:hover{
+    background-color: #FFCC00;
+}
+/*footer{
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0 ;
+    margin-top: 50px;
+}*/
+
+/* PROFILE DESIGN */
+.profile{
+    font-size: 35px;
+    font-weight: 600;
+}
+.profile-options, .theme-options{
+    padding: 20px;
+    margin-top: 60px;
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+
+}
+.theme-options p{
+    font-size: 25px;
+    padding: 10px 10px;
+}
+.profilePic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-self: center;
+    margin: 5px;
+    background-image: url(../Images/profilePic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.profile-container{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    
+}
+.Add_Image, .Remove_Image{
+    width: 80%;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Add_Image{
+    background-color: rgb(255, 217, 0);
+    color: 000080;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid #00005a;
+    box-shadow: 0 6px #00005a;
+}
+.Add_Image:hover{
+    background-color: rgb(255, 196, 0);
+}
+.Remove_Image{
+    background-color: #EBEBEB;
+}
+.Remove_Image:hover{
+    background-color: #cfcfcf;
+}
+.information{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.information label, p{
+    font-size: 20px;
+    padding:5px;
+}
+.information p{
+    text-align: center;
+}
+.information input{
+    height: 30px;
+    padding: 2px;
+    width: 50%;
+}
+.information button{
+    width: 20%;
+    align-self: center;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #FFD900;
+}
+.information button:hover{
+    background-color: #FFCC00;
+}
+.f2{
+    width: 70%;
+    border: 6px dashed #00005a;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px;
+}   
+    .f2 input{
+        width: 90%;
+    }
+    .f2 .IBio{
+        height: 100px;
+        text-align: left;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+.Social_Icon{
+    width: 150px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  .dropdown button{
+    width: 150px;
+    height: 50px;
+  }
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    width: 350px;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    padding: 10px;
+  }
+  
+  .dropdown-content input{ 
+    width: 16px;
+    margin-right: 10px;
+    color: black;
+  }
+  .dropdown-content button{
+    float: right;
+  }
+  .dropdown-content hr{
+    margin: 10px 0;
+    width: 95%;
+  }
+  .dropdown-content i{
+    font-size: 30px;
+    padding-right: 15px;
+    color: black;
+  }
+  .dropdown-content p{
+    color: #00005a;
+    font-weight: 500;
+  }
+
+
+.scroll{
+    height: 300px;
+    overflow: auto;
+}
+
+.profile-options form{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.profileSection, .themeSection{
+    display: flex;
+    justify-content: center;
+}
+.themeSection p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.themeSection .Themes{
+    font-size: 35px;
+    font-weight: 500;
+}
+.themeSection hr{
+    margin: 40px 10px;
+}
+.style-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00005a;
+}
+.Style{
+    font-size: 20px;
+    font-weight: 500;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    border: 3px solid rgba(30, 30, 30, 0.1);
+    box-shadow: 0 15px  rgba(30, 30, 30, 0.1);
+}
+    .Style:hover{
+        border: 3px solid #00005a;
+        box-shadow: 0 15px  #00005a
+    }
+
+    .s1{
+        background-color: #617ebd;
+        color: #fcfbfb;
+        border: 3px solid #00005a;
+        box-shadow: 0 15px  #00005a
+    }
+    .s2{
+        background-image: url(../Images/Iphone.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .s3{
+        background-image: url(../Images/goth.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .s4{
+        background-image: linear-gradient(#5e7fc7,#325299 );
+    }
+    .s5{
+        background-image: url(../Images/Y2K\ Aesthetic\ Institute.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .s6{
+        background-image: url(../Images/aesthethicbg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .SName1{
+        display: flex;
+        flex-direction: row;
+    }
+
+.color-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+    .color-container input{
+        border: 4px;
+        outline: none;
+        border: none;
+        width: 50px;
+        height: 50px;
+        margin: 0 20px;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .color-container input:hover{
+        background-color: #0000c7;
+    }
+    .color-container div{
+        font-size: 25px;
+        font-weight: 500;
+        color: #00005a;
+        display: flex;
+        align-items: center;
+        }
+
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items:normal;
+    color: #00005a;
+}
+.Button{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid rgba(30, 30, 30, 0.1);
+    box-shadow: 0 15px  rgba(30, 30, 30, 0.1);
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: #f2f2f27d;
+}
+    .Button:hover{
+        border: 2px solid #FFD900;
+        box-shadow: 0 15px  #FFD900
+    }
+    .Button p{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .Button.Shadow{
+        border: 2px solid #FFD900;
+        box-shadow: 0 15px  #FFD900
+
+    }
+
+/*STYLE FOR BUTTON-LINK*/
+.Solid1{
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: #FFCC00;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+}
+.Solid2{
+    width: 40%;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    background-color:  #FFCC00;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+}
+.Transparent1{
+    width: 90%;
+    height: 40px;
+    border: 2px solid;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+
+}
+.Transparent2{
+    width: 40%;
+    margin-top: 20px;
+    height: 40px;
+    border: 2px solid;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+}
+
+.Shadow1{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+
+    background-color:#FFCC00 ;
+    color: black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid 
+    rgb(33, 33, 33);
+    box-shadow: 0 6px rgb(33, 33, 33);
+}
+.Shadow2{
+    width: 40%;
+    margin-top: 20px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+
+    background-color:#FFCC00 ;
+    color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid 
+    rgb(33, 33, 33);
+    box-shadow: 0 6px rgb(33, 33, 33);
+}
+
+.Dashed1{
+    width: 90%;
+    height: 40px;
+    border: 3px dashed;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+
+}
+.Dashed2{
+    width: 40%;
+    margin-top: 20px;
+    height: 40px;
+    border: 3px dashed;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+}
+
+.Border1{
+    width: 90%;
+    height: 40px;
+    border: 3px solid;
+    background-color: #FFCC00;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+
+}
+.Border2{
+    width: 40%;
+    margin-top: 20px;
+    height: 40px;
+    border: 3px solid #00005a;
+    background-color: #FFCC00;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+}
+
+.Squared1{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.558);
+    background-color: #FFCC00;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+
+}
+.Squared2{
+    width: 40%;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.558);
+    background-color: #FFCC00;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+}
+
+
+/*ANALYTICS DESIGN*/
+.fullAnalytics-section{
+    margin-top: 20px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.fa-eye{
+    color: green;
+}
+.fa-arrow-pointer{
+    color: blue;
+}
+.fa-heart{
+    color: red;
+}
+.analyticsInfo{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+.AInfo{
+    padding: 0 30px;
+}
+.section{
+    width: 50%;
+    background-color: #ffff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.interactions{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bar-graph{
+    width: 90%;
+    height: 300px;
+    background-image: url(../Images/bar-graph.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+.interactions li{
+    font-size: 16px;
+    font-weight: 400;
+}
+.interactions ul{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.linkPerformance-click {
+    display: flex;
+    justify-content: flex-end;
+}
+.linkPerformance div{
+    display: flex;
+    justify-content: space-between;
+}
+.linkPerformance .bold-this{
+    font-weight: bold;
+}
+.linkPerformance p{
+    font-size: 16px;
+    font-weight: 350;
+}
+.piechart-container ul, .interactions ul{
+    list-style-type: none;
+}
+.listOfItem{
+    font-size: 16px;
+    font-weight: 400;
+    align-content: center;
+}
+.listOfItem ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.listOfItem li{
+    height: auto;
+}
+
+.piechart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        red 0% 25%,
+        green 25% 50%,
+        blue 50% 75%,
+        purple 75%
+    );
+}
+.piechart-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.socialIcon p{
+    font-size: 16px;
+    font-weight: 350;
+}
+.socialIcon hr, .platform hr{
+    margin: 30px 0;
+}
+.socialIcon button, .platform button{
+    font-size: 16px;
+    padding: 3px;
+    margin: 0 0 30px 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.stats{
+    height: 35px;
+    background-color: #FFD900;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.ViewClick{
+    display: flex;
+}
+.ViewClick p{
+    padding: 0;
+    font-size: 20px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+.Facebook{
+    width: 90%;
+}
+.Instagram{
+    width: 75%;
+}
+.Tiktok{
+    width: 60%;
+}
+.X {
+    width: 40%;
+}
+.Youtube {
+    width: 25%;
+}
+
+/*USER END STYLE*/
+/*Standard*/
+footer, main, .user-container, .SelectLink, .Category1Elements, .Category2Elements, .Category3Elements{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.user-container{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.Picture{
+    width: 200px;
+    height: 200px;
+    border: solid 5px rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    margin: 20px;
+
+    background-image: url(../Images/profilePic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Bio{
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 500px;
+    color: #fff;
+}
+.Bio .username{
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px black;
+}
+.Bio .bio{
+    font-size: 1.25em;
+}
+.SocialLinks{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.SocialLinks ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+div ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div li{
+    height: 50px;
+}
+div a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(22, 22, 22);
+}
+
+/* THE LINKS CONTAINERS*/
+.container{
+    margin: 20px;
+    width: 70%;
+    padding: 0 20px;
+    height: 90px;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(33, 33, 33);
+    box-shadow: 0 6px rgb(33, 33, 33);
+}
+.fa-copy{
+    color: gray;
+}
+.fa-copy:hover{
+    color: #6e6e6e;
+}
+.container.visible{
+    display: flex;
+}
+.container p{
+    width: 100%;
+}
+
+.Category1Elements, .Category2Elements, .Category3Elements{
+    flex-direction: row;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+footer{
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background: rgb(245, 241, 241);
+    box-shadow: 0 -10px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content{
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    outline: none;
+    border: none;
+    background-color: #617EBD;
+    box-shadow:10px 10px 5px rgb(30, 30, 30, 0.2) ;
+
+    display: flex;
+    justify-content: center;
+}
+.footer-content a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+}
+.footer-content a:hover{
+    font-weight: bolder;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footer-logo p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.user-end{
+    width: 80%;
+    margin:auto;
+    background-color: #0000000f;
+    height: 2px;
+}
+.selectLink{
+    font-weight: 600;
+    align-items: start;
+    width: 100px;
+    margin: 0 80px ;
+    padding: 10px;
+    font-size: 16px;
+    align-items: center;
+    background-color: #FFF;
+    color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(33, 33, 33);
+    box-shadow: 0 6px rgb(33, 33, 33);
+
+}
+.selectLink{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.selectLink option{
+    font-weight: 600;
+}
+.user-end-main{
+    display: flex;
+    margin-bottom: 100px;
+}
+.heart-react{
+    color: gray;
+    cursor: pointer;
+}
+.clicked{
+    color: red;
+}
+
+.container Button{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (width > 1440px){
+    /*Links */
+    header{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding: 20px;
+    }
+    nav{
+        width: 80%;
+        margin: 0 auto;
+        position: sticky;
+        padding: 10px 20px;
+    }
+    .Title-head{
+        font-size: 60px;
+    }
+    .addlink h2{
+        font-size: 40px;
+    }
+    .addlink p{
+        font-size: 26px;
+    }
+    .Save_btnContainer{
+        padding-right: 100px;
+    }
+    .Save_btnContainer2{
+        width: 80%;
+        padding-left:30px ;
+    }
+    nav a{
+        font-size: 20px;    
+    }
+    .input_tf label{
+        font-size: 24px;
+    }
+    .input_field, .input_field2{
+        font-size: 18px;
+    }
+
+    /*Profile*/
+    .Add_Image, .Remove_Image{
+        display: flex;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .information label, p{
+        font-size: 26px;
+    }
+    .f2 input{
+        font-size: 18px;
+
+    }
+
+    .color-container{
+        flex-direction: row;
+    }
+    .style-container{
+        justify-content: center;
+    }
+    /*USEREND*/
+    .SocialLinks .fa-brands, .fab{
+        font-size: 60px;
+    }
+}
+
+
+@media only screen and (width < 480px){
+
+    .nav-menu{
+        display: none;
+    }
+    header{
+        height: 40vh;
+    }
+    .dropdown-menu{
+        font-size: 16px;
+        width: 250px;
+    }
+    .dropdown-menu button{
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .header-content h1{
+        font-size: 50px;
+        line-height: 38px;
+        padding: 0 20px;
+
+    }
+    .header-content p{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .Title-head{
+        font-size: 30px;
+    }
+    .addlink h2{
+        font-size: 20px
+    }
+    .addlink{
+        width: 100%;
+    }
+    .addlink p{
+        font-size: 1rem;
+        margin: 0 40px;
+    }
+    .fa-brands, .fab {
+        font-size: 35px
+    }
+    .addlink i{
+        padding:  0 10px;
+        margin: 0;
+    }
+    .linkPlaceholder{
+        height: auto;
+    }
+    .addLink_btn p{
+        font-size: 16px;
+
+    }
+    .addLink_btn{
+        height: 40px;
+    }
+    .linkPages{
+        width: 100%;
+    }
+    .SelectCategory label{
+        font-size: 14px;
+    }
+    .selectCategory{
+        font: 14px;
+    }
+    .addCategory_btn p{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .addCategory_btn{
+        padding: 5px;
+        align-items: center;
+    }
+    .Save_btnContainer{
+        padding:0;
+    }
+
+    /*PROFILE*/
+    .profilePic{
+        width: 100px;
+        height: 100px;
+    }
+    .Add_Image, .Remove_Image{
+        font-size: 16px;
+        text-align: center;
+        align-items: center;
+    }
+    .f2{
+        width: 100%;
+    }
+
+    .themeSection p{
+        font-size: 18px
+
+    }
+    .themeSection .Themes, .profile{
+        font-size: 28px;
+    }
+
+    .color-container{
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+    }
+    .color-container div{
+        font-size: 14px;
+    }
+    .color-container input{
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .n1, .n2{
+        font-size: 12px;
+        padding: 5px;
+        height: 20px;
+    }
+    .Button{
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+    }
+    .Shadow1, .Shadow2{
+        box-shadow: 0 3px rgb(33, 33, 33);
+    }
+    .Style{
+        width: 100px;
+        height: 200px;
+    }
+
+    .Save_btnContainer{
+        padding-left: 90px;
+    }
+    /*USEREND SECTION*/
+
+    .selectLink {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .Category1Elements, .Category2Elements, .Category3Elements{
+        flex-direction: column;
+    }
+    .Picture{
+        width: 150px;
+        height: 150px;
+    }
+    .Bio .username{
+        font-size: 30px;
+    }
+    .Bio .bio{
+        font-size: 16px;
+    }
+    .SocialLinks .fa-brands, .fab{
+        font-size: 40px;
+    }
+    div a{
+        padding: 0 15px;
+    }
+    .container{
+        width: 80%;
+    }
+    .container p{
+        font-size: 16px;
+    }
+    
+
+    .AInfo{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .section{
+        width: 90%;
+    }
+    
+    .socialIcon button, .platform button{
+        font-size: 12px;
+        margin: 0 0 10px 0;
+    }
+    .socialIcon hr, .platform hr{
+        margin: 15px 0;
+    }
+}
+
+
+@media only screen and (width < 1440px) and (width > 480px){
+    /*Links */
+    header{
+
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        padding: 0;
+    }
+    .Title-head{
+        font-size: 40px;
+    }
+    .addlink h2{
+        font-size: 30px;
+    }
+    .addlink p{
+        font-size: 1.25rem;
+    }
+    .Save_btnContainer{
+        width: 65%;
+    }
+    .Save_btnContainer2{
+        width: 80%;
+        padding-left:30px ;
+    }
+    nav a{
+        font-size: 16px;    
+    }
+    .input_tf label{
+        font-size: 20px;
+    }
+    .input_field, .input_field2{
+        font-size: 16px;
+    }
+
+    /*Profile*/
+    .Add_Image, .Remove_Image{
+        display: flex;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .information label p{
+        font-size: 16px;
+    }
+    .f2{
+        width: 70%;
+    }
+    .f2 input{
+        font-size: 18px;
+    }
+    .color-container {
+        display: flex;
+        flex-direction: row;
+    }
+    /*USEREND*/
+    .container p{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/Landingpage.css" />
+    <link rel="stylesheet" href="fonts/all.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+
+  
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="../Images/1.png">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><div class="cweb-logo"></div></li>
+        <li>
+          <a class="nav-menu main" href="index.html"
+          ><span><i class="fa-solid fa-link"></i></span>Links
+          </a>
+        </li>
+        <li>
+          <a class="nav-menu" href="Profile.html"
+            ><span><i class="fa-solid fa-user"></i></span>Profile</a
+          >
+        </li>
+        <li>
+          <a class="nav-menu" href="Analytics.html"
+            ><span><i class="fa-solid fa-chart-simple"></i></span>Analytics
+          </a>
+        </li>
+        <li>
+          
+         <div class="UserIcon"> <button id="userIcon" class="userIcon"></button></div>
+          <div class="dropdown-menu" id="dropdown-menu">
+              <p class="dm-username">Jerard J. Regalado</p>
+              <p class="dm-link">dlink.eo/Jerex</p>
+              <hr>
+              <button id="copy-link">Copy Link</button>
+              <a href="Sign_up.html"><i class="fa-solid fa-user-plus"></i> Create an Account</a>
+              <a href="UserEnd.html"><i class="fa-solid fa-display"></i> Display Account</a>
+              <p class="dm-Menu">Menu</p>
+              <div class="menu-dm">
+              <a href="index.html"><i class="fa-solid fa-link"></i> Links</a>
+              <a href="Profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+              <a href="Analytics.html"><i class="fa-solid fa-chart-simple"></i>Analytics</a>
+              <a href="Login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out?</a>
+              </div>
+            </div>
+
+
+          
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="header-content">
+        <h1>
+          <span style="color: rgb(255, 196, 0); font-weight: bold">Dlink</span>
+          a social media manager
+        </h1>
+        <br />
+        <p>where you can share your links and get to know people</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="Link">
+        <div class="Text">
+          <p class="Title-head">You're an Icon</p>
+        </div>
+
+        <div class="addlink">
+          <h2>Welcome! Here, select your Icons!</h2>
+          <p>
+            Share social media links, choose from many social media sites and
+            let people know who you are
+          </p>
+          <ul>
+            <li>
+              <button data-modal-target="#iconModal">
+                <i class="fa-brands fa-facebook"></i>
+              </button>
+            </li>
+            <li>
+              <button data-modal-target="#iconModal">
+                <i class="fa-brands fa-x-twitter"></i>
+              </button>
+            </li>
+            <li>
+              <button data-modal-target="#iconModal">
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+            </li>
+            <li>
+              <button data-modal-target="#iconModal">
+                <i class="fa-brands fa-youtube"></i>
+              </button>
+            </li>
+            <li>
+              <button data-modal-target="#iconModal">
+                <i class="fa-brands fa-tiktok"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="iconModal" id="iconModal">
+          <div class="modal-header">
+            <div class="title">Social Icon</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <label for="addIcon">Enter URL</label><br />
+            <input
+              type="url"
+              name="url"
+              id="fb"
+              placeholder="Enter URL"
+            />
+            <div class="iconButton">
+              <button type="button" class="addIcon">Add Icon</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="Pop_up" id="Pop_up">
+          <div class="popup-body">
+            <div class="close_popup-container"><button class="close-popup">&#10006</button></div>
+            <label>Enter Title</label>
+            <div class="input-container"><input type="text" placeholder="Enter Title"></div>
+            <label>Enter URL</label>
+            <div class="input-container"><input type="url" placeholder="Enter URL"></div>
+            <hr>
+
+            <div class="iconButton">
+              <button type="button" class="save_btn">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pop-upCategory" id="pop-upCategory">
+          <div class="popup-body">
+            <div class="close_popup-container"><button class="close-popup">&#10006</button></div>
+            <label>New Category</label>
+            <div class="input-container"><input type="text" placeholder="Enter Category Name"></div>
+            <hr>
+            
+            <div class="iconButton">
+              <button type="button" class="save_btn">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div class="iconContainer">
+          <div class="iconContent">
+            <form action="#">
+              <label></label>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="linkPages" id="linkPages">
+        <div class="linkCreation">
+          <button class="addLink_btn" id="addLink_btn">
+            <span><i class="fa-solid fa-plus"></i></span>
+            <p>Add Link</p>
+          </button>
+
+          <div class="categorySection">
+            <button class="addCategory_btn" id="addCategory_btn">
+              <span><i class="fa-solid fa-list"></i></span>
+              <p>Add Category</p>
+            </button>
+
+            <div class="SelectCategory">
+              <label for="">Select Category</label>
+              <select
+                name="category"
+                class="selectCategory"
+                id="selectCategory"
+              >
+                <option value="all">All</option>
+                <option value="AI">A.I sites</option>
+                <option value="Playlist">Playlist</option>
+                <option value="Guides">Guides</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="linkPlaceholder AI">
+
+            <div class="input_tf">
+            <label>Title:</label>
+            <div class="tf">
+            <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+            <input class="input_field" id="title-input" type="text" value="Chat GPT" placeholder="Enter Title">
+              </div>
+
+            <label>URL:</label>
+            <div class="tf">
+            <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+            <input class="input_field2" id="url-input" type="url" value="https://chat.openai.com" placeholder="Enter url">
+              </div>
+            </div>
+
+            <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+          </div>
+
+          <div class="linkPlaceholder AI">
+            <div class="input_tf">
+              <label>Title:</label>
+              <div class="tf">
+              <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+              <input class="input_field" id="title-input" type="text" value="Phind" placeholder="Enter Title">
+                </div>
+  
+              <label>URL:</label>
+              <div class="tf">
+              <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+              <input class="input_field2" id="url-input" type="url" value="https://www.phind.com" placeholder="Enter url">
+                </div>
+              </div>
+  
+              <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+          </div>
+
+          <div class="linkPlaceholder AI">
+            <div class="input_tf">
+              <label>Title:</label>
+              <div class="tf">
+              <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+              <input class="input_field" id="title-input" type="text" value="Gemini" placeholder="Enter Title">
+                </div>
+  
+              <label>URL:</label>
+              <div class="tf">
+              <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+              <input class="input_field2" id="url-input" type="url" value="https://gemini.google.com/" placeholder="Enter url">
+                </div>
+              </div>
+  
+              <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+            </div>
+
+              <div class="linkPlaceholder Playlist">
+                <div class="input_tf">
+                  <label>Title:</label>
+                  <div class="tf">
+                  <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field" id="title-input" type="text" value="HTML course" placeholder="Enter Title">
+                    </div>
+      
+                  <label>URL:</label>
+                  <div class="tf">
+                  <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field2" id="url-input" type="url" value="https://youtube.com/playlist?list=PLVnJhHoKgEmoQ_6hXCKNDa2zTlzu5xe4k&si=tj_QPzQYLEGW63Mk" placeholder="Enter url">
+                    </div>
+                  </div>
+      
+                  <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+              </div>
+
+              <div class="linkPlaceholder Playlist">
+                <div class="input_tf">
+                  <label>Title:</label>
+                  <div class="tf">
+                  <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field" id="title-input" type="text" value="CSS course" placeholder="Enter Title">
+                    </div>
+      
+                  <label>URL:</label>
+                  <div class="tf">
+                  <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field2" id="url-input" type="url" value="https://youtube.com/playlist?list=PLhzIaPMgkbxBk9-drEC0MBPqEOXpVlwY4&si=e44i4GdhaUpdRjUf" placeholder="Enter url">
+                    </div>
+                  </div>
+      
+                  <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+              </div>
+
+              <div class="linkPlaceholder Playlist">
+                <div class="input_tf">
+                  <label>Title:</label>
+                  <div class="tf">
+                  <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field" id="title-input" type="text" value="Javascript course" placeholder="Enter Title">
+                    </div>
+      
+                  <label>URL:</label>
+                  <div class="tf">
+                  <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field2" id="url-input" type="url" value="https://youtube.com/playlist?list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&si=WfBoV_O84jTDzRXB" placeholder="Enter url">
+                    </div>
+                  </div>
+      
+                  <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+              </div>
+
+              <div class="linkPlaceholder Guides">
+                <div class="input_tf">
+                  <label>Title:</label>
+                  <div class="tf">
+                  <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field" id="title-input" type="text" value="StackOverflow" placeholder="Enter Title">
+                    </div>
+      
+                  <label>URL:</label>
+                  <div class="tf">
+                  <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field2" id="url-input" type="url" value="https://stackoverflow.com/" placeholder="Enter url">
+                    </div>
+                  </div>
+      
+                  <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+              </div>
+
+              <div class="linkPlaceholder Guides">
+                <div class="input_tf">
+                  <label>Title:</label>
+                  <div class="tf">
+                  <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field" id="title-input" type="text" value="Bootstrap" placeholder="Enter Title">
+                    </div>
+      
+                  <label>URL:</label>
+                  <div class="tf">
+                  <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field2" id="url-input" type="url" value="https://getbootstrap.com/" placeholder="Enter url">
+                    </div>
+                  </div>
+      
+                  <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+              </div>
+
+              <div class="linkPlaceholder Guides">
+                <div class="input_tf">
+                  <label>Title:</label>
+                  <div class="tf">
+                  <button class="edit_btn"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field" id="title-input" type="text" value="Github" placeholder="Enter Title">
+                    </div>
+      
+                  <label>URL:</label>
+                  <div class="tf">
+                  <button class="edit_btn2"><i class="fa-regular fa-pen-to-square"></i> </button>
+                  <input class="input_field2" id="url-input" type="url" value="https://github.com/" placeholder="Enter url">
+                    </div>
+                  </div>
+      
+                  <div class="trash-icon"><button><i class="fa-regular fa-trash-can"></i></button></div>
+              </div>
+            
+              
+        </div>
+        
+      </section>
+
+    </main>
+    <div class="Save_btnContainer">
+      <button type="submit" class="Save_btn" onclick="ScrollToLinkpages()">
+        <i class="fa-regular fa-floppy-disk"></i><p>Save</p>
+      </button>
+    </div>
+  <script
+    src="https://kit.fontawesome.com/592062e192.js"
+    crossorigin="anonymous"
+  ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
